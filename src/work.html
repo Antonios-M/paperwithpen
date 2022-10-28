@@ -1,0 +1,266 @@
+<!doctype html>
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="/dist/output.css" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@100;300&display=swap" rel="stylesheet">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+</head>
+<!-- npx tailwindcss -i ./src/input.css -o ./dist/output.css --watch -->
+
+<body class="body">
+    <header class="bg-slate-900 text-sky-50 sticky top-0 py-3 z-40">
+        <div class="container max-auto items-center flex justify-between">
+            <div class="md:ml-5">PAPER X PEN</div>
+            <button id='toggle' class="md:hidden">
+                <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5"
+                    stroke="currentColor" class="w-6 h-6">
+                    <path stroke-linecap="round" stroke-linejoin="round"
+                        d="M3.75 6.75h16.5M3.75 12h16.5m-16.5 5.25h16.5" />
+                </svg>
+            </button>
+            <nav id="nav"
+                class="fixed top-10 bottom-0 -right-full bg-slate-900 w-52 md:w-auto md:static transition-all md:mr-5">
+                <ul class="md:flex">
+                    <li>
+                        <a class="block p-3 hover:text-orange-600 transition-all duration-700 focus:bg-cyan-900"
+                            href="index.html">about</a>
+                    </li>
+                    <li>
+                        <a class="block p-3 hover:text-orange-600 transition-all duration-700 focus:bg-cyan-900"
+                            href="commissions.html">commissions</a>
+                    </li>
+                    <li>
+                        <a class="block p-3 hover:text-orange-600 transition-all duration-700 focus:bg-cyan-900"
+                            href="products.html">product</a>
+                    </li>
+                    <li>
+                        <a class="block p-3 hover:text-orange-600 text-orange-600 transition-all duration-700 focus:bg-cyan-900"
+                            href="#">work</a>
+                    </li>
+                    <li>
+                        <a class="block p-3 hover:text-orange-600 transition-all duration-700 focus:bg-cyan-900"
+                            href="events.html">events</a>
+                    </li>
+                    <li>
+                        <a class="block p-3 hover:text-orange-600 transition-all duration-700 focus:bg-cyan-900"
+                            href="contact.html">contact</a>   
+                    </li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+    <ul class="flex flex-row w-full justify-center py-10 mb-10 gap-4">
+        <li class="list rounded-md cursor-pointer hover:bg-slate-500 hover:text-white bg-slate-400 p-2 px-5" data-filter="All">All</li>
+        <li class="list rounded-md cursor-pointer hover:bg-slate-500 hover:text-white bg-slate-400 p-2 px-5" data-filter="hongKong">Hong Kong</li>
+        <li class="list rounded-md cursor-pointer hover:bg-slate-500 hover:text-white bg-slate-400 p-2 px-5" data-filter="asia">Asia</li>
+        <li class="list rounded-md cursor-pointer hover:bg-slate-500 hover:text-white bg-slate-400 p-2 px-5" data-filter="europe">Europe</li>
+    </ul>
+    <div class="product grid grid-cols-1 mb-10 md:grid-cols-3 lg:grid-cols-4 gap-6 ml-10 mr-10 mt-5">
+        <div id="46" class="itemBox hongKong">
+            <img src="../assets/work/Asia/Hong Kong/hongKong (1).jpg" alt="">
+            <div></div>
+        </div>
+        <div id="27" class="itemBox hongKong">
+            <img src="../assets/work/Asia/Hong Kong/hongKong (2).jpg" alt="">
+            <div></div>
+        </div>
+        <div id="24" class="itemBox hongKong">
+            <img src="../assets/work/Asia/Hong Kong/hongKong (3).jpg" alt="">
+            <div></div>
+        </div>
+        <div id="33" class="itemBox hongKong">
+            <img src="../assets/work/Asia/Hong Kong/hongKong (4).jpg" alt="">
+            <div></div>
+        </div>
+        <div id="29" class="itemBox hongKong">
+            <img src="../assets/work/Asia/Hong Kong/hongKong (5).jpg" alt="">
+            <div></div>
+        </div>
+        <div id="34" class="itemBox hongKong">
+            <img src="../assets/work/Asia/Hong Kong/hongKong (6).jpg" alt="">
+            <div></div>
+        </div>
+        <div id="20" class="itemBox hongKong">
+            <img src="../assets/work/Asia/Hong Kong/hongKong (7).jpg" alt="">
+            <div></div>
+        </div>
+        <div id="32" class="itemBox hongKong">
+            <img src="../assets/work/Asia/Hong Kong/hongKong (8).jpg" alt="">
+            <div></div>
+        </div>
+        <div id="19" class="itemBox hongKong">
+            <img src="../assets/work/Asia/Hong Kong/hongKong (9).jpg" alt="">
+            <div></div>
+        </div>
+        <div id="36" class="itemBox hongKong">
+            <img src="../assets/work/Asia/Hong Kong/hongKong (10).jpg" alt="">
+            <div></div>
+        </div>
+        <div id="23" class="itemBox hongKong">
+            <img src="../assets/work/Asia/Hong Kong/hongKong (11).jpg" alt="">
+            <div></div>
+        </div>
+        <div id="35" class="itemBox hongKong">
+            <img src="../assets/work/Asia/Hong Kong/hongKong (12).jpg" alt="">
+            <div></div>
+        </div>
+        <div id="21" class="itemBox hongKong">
+            <img src="../assets/work/Asia/Hong Kong/hongKong (13).jpg" alt="">
+            <div></div>
+        </div>
+        <div id="28" class="itemBox hongKong">
+            <img src="../assets/work/Asia/Hong Kong/hongKong (14).jpg" alt="">
+            <div></div>
+        </div>
+        <div id="26" class="itemBox hongKong">
+            <img src="../assets/work/Asia/Hong Kong/hongKong (15).jpg" alt="">
+            <div></div>
+        </div>
+        <div id="30" class="itemBox hongKong">
+            <img src="../assets/work/Asia/Hong Kong/hongKong (16).jpg" alt="">
+            <div></div>
+        </div>
+        <div id="31" class="itemBox hongKong">
+            <img src="../assets/work/Asia/Hong Kong/hongKong (17).jpg" alt="">
+            <div></div>
+        </div>
+        <div id="15" class="itemBox hongKong">
+            <img src="../assets/work/Asia/Hong Kong/hongKong (18).jpg" alt="">
+            <div></div>
+        </div>
+        <div id="16" class="itemBox hongKong">
+            <img src="../assets/work/Asia/Hong Kong/hongKong (19).jpg" alt="">
+            <div></div>
+        </div>
+        <div id="17" class="itemBox hongKong">
+            <img src="../assets/work/Asia/Hong Kong/hongKong (20).jpg" alt="">
+            <div></div>
+        </div>
+        <div id="22" class="itemBox hongKong">
+            <img src="../assets/work/Asia/Hong Kong/hongKong (21).jpg" alt="">
+            <div></div>
+        </div>
+        <div id="25" class="itemBox hongKong">
+            <img src="../assets/work/Asia/Hong Kong/hongKong (22).jpg" alt="">
+            <div></div>
+        </div>
+        <div id="31" class="itemBox hongKong">
+            <img src="../assets/work/Asia/Hong Kong/hongKong (23).jpg" alt="">
+            <div></div>
+        </div>
+        <div id="38" class="itemBox hongKong">
+            <img src="../assets/work/Asia/Hong Kong/hongKong (24).jpg" alt="">
+            <div></div>
+        </div>
+        <div id="18" class="itemBox hongKong">
+            <img src="../assets/work/Asia/Hong Kong/hongKong (25).jpg" alt="">
+            <div></div>
+        </div>
+        <!-- asia -->
+        <div id="38" class="itemBox asia">
+            <img src="../assets/work/Asia/Other Asian Cities/Bangkok 曼谷.JPEG" alt="">
+            <div>
+                <div></div>
+            </div>
+        </div>
+        <div id="39" class="itemBox asia">
+            <img src="../assets/work/Asia/Other Asian Cities/Hanoi 河內.jpg" alt="">
+            <div>
+                <div></div>
+            </div>
+        </div>
+        <div id="40" class="itemBox asia">
+            <img src="../assets/work/Asia/Other Asian Cities/Kathmandu 加德滿都.jpg" alt="">
+            <div>
+                <div></div>
+            </div>
+        </div>
+        <div id="41" class="itemBox asia">
+            <img src="../assets/work/Asia/Other Asian Cities/Penang 檳城.jpg" alt="">
+            <div>
+                <div></div>
+            </div>
+        </div>
+        <div id="42" class="itemBox asia">
+            <img src="../assets/work/Asia/Other Asian Cities/Singapore  新加坡.jpg" alt="">
+            <div>
+                <div></div>
+            </div>
+        </div>
+        <div id="43" class="itemBox asia">
+            <img src="../assets/work/Asia/Other Asian Cities/Taipei   台北.JPEG" alt="">
+            <div>
+                <div></div>
+            </div>
+        </div>
+        <div id="44" class="itemBox asia">
+            <img src="../assets/work/Asia/Other Asian Cities/Tokyo Japan.jpg" alt="">
+            <div>
+                <div></div>
+            </div>
+        </div>
+        <div id="45" class="itemBox asia">
+            <img src="../assets/work/Asia/Other Asian Cities/Tokyo, Japan (2).jpg" alt="">
+            <div>
+                <div></div>
+            </div>
+        </div>
+        <!-- europe -->
+        <div id="47" class="itemBox europe">
+            <img src="../assets/work/Europe/bucharest.jfif" alt="">
+            <div>
+                <div></div>
+            </div>
+        </div>
+        <div id="48" class="itemBox europe">
+            <img src="../assets/work/Europe/edinburgh.jpg" alt="">
+            <div>
+                <div></div>
+            </div>
+        </div>
+        <div id="49" class="itemBox europe">
+            <img src="../assets/work/Europe/helsinki.jpg" alt="">
+            <div>
+                <div></div>
+            </div>
+        </div>
+        <div id="50" class="itemBox europe">
+            <img src="../assets/work/Europe/london.jpg" alt="">
+            <div>
+                <div></div>
+            </div>
+        </div>
+        <div id="51" class="itemBox europe">
+            <img src="../assets/work/Europe/manchester2.jpg" alt="">
+            <div>
+                <div></div>
+            </div>
+        </div>
+        <div id="52" class="itemBox europe">
+            <img src="../assets/work/Europe/manchester3.jpg" alt="">
+            <div>
+                <div></div>
+            </div>
+        </div>
+        <div id="53" class="itemBox europe">
+            <img src="../assets/work/Europe/vienna.jpg" alt="">
+            <div>
+                <div></div>
+            </div>
+        </div>
+        <div id="54" class="itemBox europe">
+            <img src="../assets/work/Europe/talin.jpg" alt="">
+            <div>
+                <div></div>
+            </div>
+        </div>
+    </div>
+    <script type="text/javascript" src="script.js"></script>
+</body>
+
+</html>

@@ -1,0 +1,108 @@
+<!doctype html>
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="/dist/output.css" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@100;300&display=swap" rel="stylesheet">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+</head>
+<!-- npx tailwindcss -i ./src/input.css -o ./dist/output.css --watch -->
+
+<body class="body">
+    <header class="bg-slate-900 text-sky-50 sticky top-0 py-3 z-40">
+        <div class="container max-auto items-center flex justify-between">
+            <div class="md:ml-5">PAPER X PEN</div>
+            <button id='toggle' class="md:hidden">
+                <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5"
+                    stroke="currentColor" class="w-6 h-6">
+                    <path stroke-linecap="round" stroke-linejoin="round"
+                        d="M3.75 6.75h16.5M3.75 12h16.5m-16.5 5.25h16.5" />
+                </svg>
+            </button>
+            <nav id="nav"
+                class="fixed top-10 bottom-0 -right-full bg-slate-900 w-52 md:w-auto md:static transition-all md:mr-5">
+                <ul class="md:flex">
+                    <li>
+                        <a class="block p-3 hover:text-orange-600 transition-all duration-700 focus:bg-cyan-900"
+                            href="index.html">about</a>
+                    </li>
+                    <li>
+                        <a class="block p-3 hover:text-orange-600 transition-all duration-700 focus:bg-cyan-900"
+                            href="commissions.html">commissions</a>
+                    </li>
+                    <li>
+                        <a class="block p-3 hover:text-orange-600 transition-all duration-700 focus:bg-cyan-900"
+                            href="products.html">product</a>
+                    </li>
+                    <li>
+                        <a class="block p-3 hover:text-orange-600 transition-all duration-700 focus:bg-cyan-900"
+                            href="work.html">work</a>
+                    </li>
+                    <li>
+                        <a class="block p-3 hover:text-orange-600 text-orange-600 transition-all duration-700 focus:bg-cyan-900"
+                            href="events.html">events</a>
+                    </li>
+                    <li>
+                        <a class="block p-3 hover:text-orange-600 transition-all duration-700 focus:bg-cyan-900"
+                            href="contact.html">contact</a>   
+                    </li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+    <!-- london -->
+    <div class="text-3xl font-bold text-teal-900 text-center w-full m-10 bg-gray-300 ml-0 p-3 mt-20">London Market</div>
+    <div class="product grid grid-cols-1 mb-10 md:grid-cols-3 gap-6 ml-10 mr-10 mt-5">
+        <div class="events">
+            <img src="../assets/events/london1.jfif" alt="">
+        </div>
+        <div class="events">
+            <img src="../assets/events/london2.jpg" alt="">
+        </div>
+        <div class="events">
+            <img src="../assets/events/london3.jpg" alt="">
+        </div>
+    </div>
+    <div class="text-3xl font-bold text-teal-900 text-center w-full m-10 bg-gray-300 ml-0 p-3 mt-20">Hong Kong Market</div>
+    <div class=" events product grid grid-cols-1 mb-10 md:grid-cols-3 gap-6 ml-10 mr-10 mt-5 grid-rows-2">
+        <div class="events">
+            <img src="../assets/events/hongkong1.jfif" alt="">
+        </div>
+        <div class="events">
+            <img src="../assets/events/hongkong2.jpg" alt="">
+        </div>
+        <div class="events">
+            <img src="../assets/events/hongkong3.jfif" alt="">
+        </div>
+        <div class="events">
+            <img src="../assets/events/hongkong4.jpg" alt="">
+        </div>
+        <div class="events">
+            <img src="../assets/events/hongkong5.jpg   " alt="">
+        </div>
+    </div>
+    <div class="text-3xl font-bold text-teal-900 text-center w-full m-10 bg-gray-300 ml-0 p-3 mt-20 grid-rows-2">University Workshop</div>
+    <div class="product grid grid-cols-1 mb-10 md:grid-cols-3 gap-6 ml-10 mr-10 mt-5">
+        <div class="events">
+            <img src="../assets/events/uni1.jfif" alt="">
+        </div>
+        <div class="events">
+            <img src="../assets/events/uni2.jfif" alt="">
+        </div>
+        <div class="events">
+            <img src="../assets/events/uni3.jfif" alt="">
+        </div>
+        <div class="events">
+            <img src="../assets/events/uni4.jfif" alt="">
+        </div>
+        <div class="events">
+            <img src="../assets/events/uni5.jfif" alt="">
+        </div>
+    </div>
+    <script type="text/javascript" src="script.js"></script>
+</body>
+</html>

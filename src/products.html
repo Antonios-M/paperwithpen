@@ -1,0 +1,142 @@
+<!doctype html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="/dist/output.css" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@100;300&display=swap" rel="stylesheet">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+</head>
+<!-- npx tailwindcss -i ./src/input.css -o ./dist/output.css --watch -->
+
+<body class="body">
+    <header class="bg-slate-900 text-sky-50 sticky top-0 py-3">
+        <div class="container max-auto items-center flex justify-between">
+            <div class="md:ml-5">PAPER X PEN</div>
+            <button id='toggle' class="md:hidden">
+                <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5"
+                    stroke="currentColor" class="w-6 h-6">
+                    <path stroke-linecap="round" stroke-linejoin="round"
+                        d="M3.75 6.75h16.5M3.75 12h16.5m-16.5 5.25h16.5" />
+                </svg>
+            </button>
+            <nav id="nav"
+                class="fixed top-10 bottom-0 -right-full bg-slate-900 w-52 md:w-auto md:static transition-all md:mr-5">
+                <ul class="md:flex">
+                    <li>
+                        <a class="block p-3 hover:text-orange-600  transition-all duration-700 focus:bg-cyan-900"
+                            href="index.html">about</a>
+                    </li>
+                    <li>
+                        <a class="block p-3 hover:text-orange-600 transition-all duration-700 focus:bg-cyan-900"
+                            href="commissions.html">commissions</a>
+                    </li>
+                    <li>
+                        <a class="block p-3 hover:text-orange-600 text-orange-600 transition-all duration-700 focus:bg-cyan-900"
+                            href="products.html">product</a>
+                    </li>
+                    <li>
+                        <a class="block p-3 hover:text-orange-600 transition-all duration-700 focus:bg-cyan-900"
+                            href="work.html">work</a>
+                    </li>
+                    <li>
+                        <a class="block p-3 hover:text-orange-600 transition-all duration-700 focus:bg-cyan-900"
+                            href="events.html">event</a>
+                    </li>
+                    <li>
+                        <a class="block p-3 hover:text-orange-600 transition-all duration-700 focus:bg-cyan-900"
+                            href="contact.html">contact</a>
+                    </li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+    <!-- gallery -->
+        <ul class="flex flex-row w-full justify-center py-10 mb-10 gap-4">
+            <li class="list rounded-md cursor-pointer hover:bg-slate-500 hover:text-white bg-slate-400 p-2 px-5" data-filter="all">All</li>
+            <li class="list rounded-md cursor-pointer hover:bg-slate-500 hover:text-white bg-slate-400 p-2 px-5" data-filter="coloured">Postcards</li>
+            <li class="list rounded-md cursor-pointer hover:bg-slate-500 hover:text-white bg-slate-400 p-2 px-5" data-filter="stickers">Stickers</li>
+            <li class="list rounded-md cursor-pointer hover:bg-slate-500 hover:text-white bg-slate-400 p-2 px-5" data-filter="toteBag">Tote Bags</li>
+            <li class="list rounded-md cursor-pointer hover:bg-slate-500 hover:text-white bg-slate-400 p-2 px-5" data-filter="catalogue">catalogue</li>
+            <li class="list rounded-md cursor-pointer hover:bg-slate-500 hover:text-white bg-slate-400 p-2 px-5" data-filter="catalogue">
+                <a href=" https://forms.gle/a13QSn9URRscH9FB8" target="_blank">
+                    <svg xmlns="http://www.w3.org/2000/svg" fill="#ffff" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-6 h-6">
+                        <path stroke-linecap="round" stroke-linejoin="round" d="M2.25 3h1.386c.51 0 .955.343 1.087.835l.383 1.437M7.5 14.25a3 3 0 00-3 3h15.75m-12.75-3h11.218c1.121-2.3 2.1-4.684 2.924-7.138a60.114 60.114 0 00-16.536-1.84M7.5 14.25L5.106 5.272M6 20.25a.75.75 0 11-1.5 0 .75.75 0 011.5 0zm12.75 0a.75.75 0 11-1.5 0 .75.75 0 011.5 0z" />
+                    </svg>
+                </a>
+            </li>
+        </ul>
+        <div class="product grid auto-rows-max grid-cols-1 mb-10 md:grid-cols-3 lg:grid-cols-4 gap-6 ml-10 mr-10 mt-5">
+            <!-- coloured -->
+            <div id="0" class="itemBox coloured">
+                <img src="../assets/products/postcard (1).jpg" alt="">
+                <div></div>
+            </div>
+            <div id="1" class="itemBox coloured">
+                <img src="../assets/products/postcard (1).png" alt="">
+                <div></div>
+            </div>
+            <div id="2" class="itemBox coloured">
+                <img src="../assets/products/postcard (2).jpg" alt="">
+                <div></div>
+            </div>
+            <!-- stickers -->
+            <div id="3" class="itemBox coloured">
+                <img src="../assets/products/postcard (2).png" alt="">
+                <div></div>
+            </div>
+            <div id="4" class="itemBox coloured">
+                <img src="../assets/products/postcard (3).JPG" alt="">
+                <div></div>
+            </div>
+            <div id="5" class="itemBox coloured">
+                <img src="../assets/products/postcard (3).png" alt="">
+                <div></div>
+            </div>
+            <!-- tote bag -->
+            <div id="6" class="itemBox coloured">
+                <img src="../assets/products/postcard (4).jpg" alt="">
+                <div></div>
+            </div>
+            <div id="7" class="itemBox toteBag">
+                <img src="../assets/products/totebags.JPG" alt="">
+                <div></div>
+            </div>
+            <div id="8" class="itemBox toteBag">
+                <img src="../assets/products/totebags (1).JPG" alt="">
+                <div></div>
+            </div>
+            <div id="9" class="itemBox toteBag">
+                <img src="../assets/products/totebags (2).jpg" alt="">
+                <div></div>
+            </div>
+            <!-- stickers -->
+            <div id="10" class="itemBox stickers">
+                <img src="../assets/products/stickers.JPG" alt="">
+                <div></div>
+            </div>
+            <div id="11" class="itemBox stickers">
+                <img src="../assets/products/stickers1.JPG" alt="">
+                <div></div>
+            </div>
+            <div id="12" class="itemBox stickers">
+                <img src="../assets/products/stickers2.JPG" alt="">
+                <div></div>
+            </div>
+            <!-- catalogue -->
+            <div id="13" class="itemBox catalogue">
+                <img src="../assets/products/catalogue1.png" alt="">
+                <div></div>
+            </div>
+            <div id="14" class="itemBox catalogue">
+                <img src="../assets/products/catalogue2.png" alt="">
+                <div></div>
+            </div>
+        </div>
+    </section>
+    <script type="text/javascript" src="script.js"></script>
+</body>
+
+</html>
